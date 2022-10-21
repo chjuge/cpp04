@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
-
+*jivotnoe
+.vscode
 # Compiled Object files
 *.slo
 *.lo
