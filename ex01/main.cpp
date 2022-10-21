@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 15:10:51 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 19:12:56 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:46:23 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,18 @@ int main (void)
 		arr[i] = new Cat();
 	for (int i = 5; i < n; i++)
 		arr[i] = new Dog();
-	for (int i = 0; i < n; i ++)
+	
+	std::cout << std::endl;
+
+	arr[0]->setIdeas();
+	arr[9]->setIdeas();
+
+	for (int i = 0; i < n; i++)
+		arr[i]->showIdeas();
+
+	std::cout << std::endl;
+
+	for (int i = 0; i < n; i++)
 		delete arr[i];
 	return (0);
 }

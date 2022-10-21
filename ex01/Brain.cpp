@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 16:14:41 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 16:27:21 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:45:00 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,15 @@ Brain & Brain::operator =(Brain const & src)
 		this->ideas[i] = src.ideas[i];
 	
 	return (*this);
+}
+
+void Brain::setIdeas()
+{
+	for (int i = 0; i < 100; i++)
+		this->ideas[i] = "Braaaaaains!";
+}
+
+void Brain::showIdeas()
+{
+	std::cout << this->ideas[0] << std::endl;
 }

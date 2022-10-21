@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:32:45 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 15:45:18 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:42:22 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ public:
 	virtual void makeSound() const;
 	std::string getType();
 	std::string getType() const;
+
+	virtual void setIdeas();
+	virtual void showIdeas();
 };
 
 #endif

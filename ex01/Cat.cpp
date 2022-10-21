@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:57:24 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 19:10:14 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:45:21 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ Cat::Cat(Cat const & src) : Animal(src)
 {
 	std::cout << "Copy constructor [Cat]" << std::endl;
 	this->type = src.type;
+	this->brain = src.brain;
 }
 
 Cat & Cat::operator=(Cat const & src)
@@ -46,4 +47,14 @@ void Cat::makeSound()
 void Cat::makeSound() const
 {
 	std::cout << "Meow!" << std::endl;
+}
+
+void Cat::setIdeas()
+{
+	this->brain->setIdeas();
+}
+
+void Cat::showIdeas()
+{
+	this->brain->showIdeas();
 }

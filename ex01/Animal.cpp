@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:35:31 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 15:41:41 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:42:38 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,14 @@ std::string Animal::getType()
 std::string Animal::getType() const
 {
 	return (this->type);
+}
+
+void Animal::setIdeas()
+{
+	std::cout << "Oops! It doesn't have a brain" << std::endl;
+}
+
+void Animal::showIdeas()
+{
+	std::cout << "Oops! It doesn't have a brain" << std::endl;
 }

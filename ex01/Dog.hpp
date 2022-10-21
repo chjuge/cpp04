@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:54:21 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 18:58:43 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/10/21 19:42:57 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ public:
 
 	void makeSound();
 	void makeSound() const;
+	void setIdeas();
+	void showIdeas();
 };
 
 #endif
