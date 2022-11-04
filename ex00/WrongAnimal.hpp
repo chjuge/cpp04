@@ -6,7 +6,7 @@
 /*   By: mproveme <mproveme@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:45:57 by mproveme          #+#    #+#             */
-/*   Updated: 2022/10/21 15:28:38 by mproveme         ###   ########.fr       */
+/*   Updated: 2022/11/04 19:04:00 by mproveme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class WrongAnimal : public Animal
 public:
 	WrongAnimal();
 	WrongAnimal(WrongAnimal const & src);
-	~WrongAnimal();
+	virtual ~WrongAnimal();
 
 	WrongAnimal & operator =(WrongAnimal const & src);
 
